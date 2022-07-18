@@ -1,0 +1,26 @@
+Part One: Solidify Terminology
+In your own terms, define the following terms:
+
+What is HTTP? Hypertext Transfer Protocol. Protocol sets how server and browser communicate
+=>s: Hyper Text Transfer Protocol is governs how clients get data from, or send data to, a server.
+What is a URL? Uniform Resource Locator. indicates the location of web resorces instead of IP address
+What is DNS? It's like phonebook. DNS translates domain names to IP addresses so browsers can load Internet resources. s: this is a system that takes human-readable URLs and converts them into IP addresses.
+
+
+What is a query string? Provide Extra informatin like search terms etc. s: The query string allows you to pass key-value pairs into the URL, in the format ?key1=value1&key2=value2...
+What are two HTTP verbs and how are they different? get => get information to server. post => send inforamtion to server.
+What is an HTTP request? HTTP request is made to request information from server.
+What is an HTTP response? HTTP response is sent by server to responding to HTTP request.
+What is an HTTP header? Give a couple examples of request and response headers you have seen. 
+=>header provide additional inforamtion.
+Headers provide additional information about the request or the response. Here are some examples:
+Request headers: Host, User-Agent, Accept, Cookie, Cache-Control
+Response headers: Content-Type, Last-Modified, Set-Cookie, Cache-Control
+
+What are the processes that happen when you type “http://somesite.com/some/page.html” into a browser?
+==>URL is changed to IP address by DNS and HTTP request is sent to the server and server responds with website information
+==>springboard: Your browser “resolves” the name into an IP address using DNS
+Your browser makes a request to that IP address, including headers (info about browser, any previous cookies, and other things)
+The server sends a response (typically, HTML, with a status code (200 if it was sucessful)
+The browser makes a DOM from that HTML, and finds any other resources needed (images, CSS, JavaScript, etc)
+The browser makes separate HTTP requests for those resources and receives response from the server for each 
